@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatApp | Chatting Made Easier With ChatApp</title>
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script defer src="js/client.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 599px)" href="/css/mobile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav>
+        <img class="logo" src="chat.png" alt="">
+        <h1>ChatApp</h1>
+    </nav>
+    <div class="container">
+        <!-- <div class="message right">Harry: Hey how are you?</div>
+        <div class="message left">Rohan: I am fine bro. How about you?</div> -->
+
+        <div class="officialMessage">This chat is <a href="#" style="text-decoration: none;">end-to-end encrypted</a>. No one outside of this chat, not even <strong>ChatApp</strong>, can read them.</div>
+    </div>
+    <div class="send">
+        <form action="#" id="send-container" autocomplete="off">
+            <textarea type="text" name="messageInp" id="messageInp" onkeyup="success()" placeholder="Message" style="color: rgb(255, 255, 255); background-color: black;" rows="3"></textarea>
+            <button class="btn" type="submit" id="button" style="font-size:24px;color:red" disabled><i class="fa fa-send-o"></i></button>
+        </form>
+    </div>
+</body>
+<footer>
+    <hr>
+    ChatApp &copy; 2022. All Rights Reserved.
+    <br>
+    Made in India.
+</footer>
+</html>
